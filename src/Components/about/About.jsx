@@ -27,16 +27,19 @@ export default function About() {
             <img src="/imgs/development.svg" alt="" />
             <h2 className="mb-3">DEVELOPMENT</h2>
             <p>
-              I can design the site based on your needs and suggestions. I can
-              also design the site from scratch and consult you during the job.
+              Crafting digital solutions from inception to execution, I
+              specialize in web development that seamlessly merges functionality
+              with innovation, ensuring a tailored and dynamic online
+              experience.
             </p>
           </div>
           <div className="card col-lg-6 border-0">
             <img src="/imgs/maintenance.svg" alt="" />
             <h2 className="mb-3">MAINTENANCE</h2>
             <p>
-              I can design the site based on your needs and suggestions. I can
-              also design the site from scratch and consult you during the job.
+              Ensuring sustained excellence, my maintenance services guarantee
+              the ongoing smooth operation of your website, combining regular
+              updates and enhancements to keep your online presence at its best.
             </p>
           </div>
         </div>
