@@ -1,0 +1,43 @@
+.navbar {
+  background-color: #000 !important;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+.logo {
+  width: 60px;
+  margin: 0;
+}
+.logo img {
+  width: 100%;
+  object-fit: contain;
+}
+.nav-link {
+  color: #ffffffa9;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.nav-link.active {
+  color: #fff !important;
+}
+.navbar .contact.active {
+  color: #fff !important;
+  background-color: transparent !important;
+}
+.navbar-nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-left: auto;
+}
+
+.navbar-toggler {
+  color: #fff !important;
+}
+
+.navbar .contact {
+  color: #000;
+  background-color: white;
+  font-weight: 600;
+}
