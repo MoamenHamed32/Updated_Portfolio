@@ -79,9 +79,28 @@
   font-size: 1.5rem;
   font-weight: 600;
 }
+@media screen and (max-width: 767px) {
+  .contact .overlay .popup {
+    width: 85%;
+  }
+  .contact .popup h2 {
+    font-size: 1.7rem;
+  }
+
+  .contact .popup h3 {
+    font-size: 1.2rem;
+  }
+}
 @media screen and (max-width: 435px) {
   .contact form input,
   .contact form textarea {
     font-size: 0.6rem;
+  }
+  .contact .popup h2 {
+    font-size: 1.2rem;
+  }
+
+  .contact .popup h3 {
+    font-size: 0.8rem;
   }
 }
