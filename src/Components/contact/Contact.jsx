@@ -5,9 +5,9 @@ import { addDoc } from "firebase/firestore";
 import "./Contact.css";
 
 export default function Contact() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const [styles, setStyles] = useState({
-    transform: `scale(1)`,
+    transform: `scale(0)`,
   });
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
