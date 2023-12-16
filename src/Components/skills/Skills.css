@@ -8,7 +8,7 @@
 .skills figure {
   width: 50%;
   margin-bottom: 1rem;
-  min-height: 100px;
+  height: 100px;
 }
 
 .skill h3 {

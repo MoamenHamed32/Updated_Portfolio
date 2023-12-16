@@ -7,7 +7,7 @@ export default function Skills() {
       <div className="container d-flex flex-column align-items-center gap-5">
         <h2 className="section_title">SKILLS</h2>
         <div className="current_skills w-100">
-          <h2 className="skills_state">Using Now:</h2>
+          <h2 className="skills_state">USING NOW:</h2>
           <div className="row justify-content-center gap-4 mb-5">
             <div className="skill col-lg-2 col-md-4 d-flex flex-column align-items-center">
               <figure className="d-flex justify-content-center">
@@ -84,6 +84,29 @@ export default function Skills() {
                 <img src="/imgs/skills/redux.png" alt="" />
               </figure>
               <h3>Redux</h3>
+            </div>
+          </div>
+        </div>
+        <div className="learning_skills w-100">
+          <h2 className="skills_state">LEARNING:</h2>
+          <div className="row justify-content-center gap-4 mb-5 ">
+            <div className="skill col-lg-2 col-md-4 d-flex flex-column align-items-center">
+              <figure className="d-flex justify-content-center">
+                <img src="/imgs/skills/node.png" alt="" />
+              </figure>
+              <h3>Node.js</h3>
+            </div>
+            <div className="skill col-lg-2 col-md-4 d-flex flex-column align-items-center">
+              <figure className="d-flex justify-content-center">
+                <img src="/imgs/skills/mongo.png" alt="" />
+              </figure>
+              <h3>MongoDB</h3>
+            </div>
+            <div className="skill col-lg-2 col-md-4 d-flex flex-column align-items-center">
+              <figure className="d-flex justify-content-center">
+                <img src="/imgs/skills/express.png" alt="" />
+              </figure>
+              <h3>Express JS</h3>
             </div>
           </div>
         </div>
