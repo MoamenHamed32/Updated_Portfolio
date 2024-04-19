@@ -33,12 +33,7 @@ function ContactForm() {
   };
 
   return (
-    <form
-      onSubmit={() => {
-        handleSubmit;
-        onSubmit();
-      }}
-    >
+    <form onSubmit={handleSubmit}>
       <input
         type="text"
         name="userName"
