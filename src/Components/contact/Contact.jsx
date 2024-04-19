@@ -1,8 +1,45 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { useForm as formSpree, ValidationError } from "@formspree/react";
 import { contactsCol } from "../../config/firebase/firebase";
 import { addDoc } from "firebase/firestore";
 import "./Contact.css";
+
+function ContactForm() {
+  const [state, handleSubmit] = useForm("xpzvkpqr");
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <input
+        type="text"
+        name="userName"
+        {...register("userName", { required: true })}
+        placeholder="ENTER YOUR NAME*"
+      />
+      <input
+        type="email"
+        name="email"
+        {...register("email", { required: true })}
+        placeholder="ENTER YOUR EMAIL*"
+      />
+      <input
+        type="number"
+        {...register("phone")}
+        placeholder="PHONE NUMBER"
+        name="phone"
+      />
+      <textarea
+        name="message"
+        id=""
+        cols="30"
+        rows="6"
+        {...register("message", { required: true })}
+        placeholder="YOUR MESSAGE*"
+      ></textarea>
+      <button type="submit">SUBMIT</button>
+    </form>
+  );
+}
 
 export default function Contact() {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,36 +86,7 @@ export default function Contact() {
         )}
         <h2 className="section_title">CONTACT</h2>
         <img src="../../../assets/separatorBlack.svg" className="my-3" alt="" />
-        <form
-          onSubmit={handleSubmit(onSubmit)}
-          action="https://formspree.io/f/xpzvkpqr"
-          method="POST"
-        >
-          <input
-            type="text"
-            {...register("userName", { required: true })}
-            placeholder="ENTER YOUR NAME*"
-          />
-          <input
-            type="email"
-            {...register("email", { required: true })}
-            placeholder="ENTER YOUR EMAIL*"
-          />
-          <input
-            type="number"
-            {...register("phone")}
-            placeholder="PHONE NUMBER"
-          />
-          <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="6"
-            {...register("message", { required: true })}
-            placeholder="YOUR MESSAGE*"
-          ></textarea>
-          <button type="submit">SUBMIT</button>
-        </form>
+        <ContactForm />
       </div>
     </section>
   );
