@@ -9,13 +9,32 @@ export default function Portfolio() {
       </div>
       <div className="row w-100 mx-auto">
         <div className="col-lg-4 card">
-          <a href="https://iti-angular-portfolio.vercel.app/" target="_blank">
+          <a href="https://oylimo.com" target="_blank">
             <div className="overlay">View Project</div>
           </a>
           <figure>
-            <img src="/imgs/projects/angular-portfolio.png" alt="" />
+            <img src="/imgs/projects/oylimo.png" alt="" />
           </figure>
         </div>
+        <div className="col-lg-4 card">
+          <a href="https://kdc-frontend.vercel.app/" target="_blank">
+            <div className="overlay">View Project</div>
+          </a>
+          <figure>
+            <img src="/imgs/projects/kdc.png" alt="" />
+          </figure>
+        </div>
+
+        <div className="col-lg-4 card">
+          <a href="https://iti-final-project.vercel.app/" target="_blank">
+            <div className="overlay">View Project</div>
+          </a>
+          <figure>
+            <img src="/imgs/projects/technoMatic.png" alt="" />
+          </figure>
+        </div>
+      </div>
+      <div className="row w-100 mx-auto">
         <div className="col-lg-4 card">
           <a
             href="https://angular-final-project-iota.vercel.app/"
@@ -27,16 +46,6 @@ export default function Portfolio() {
             <img src="/imgs/projects/angular-movie-app.png" alt="" />
           </figure>
         </div>
-        <div className="col-lg-4 card">
-          <a href="https://iti-final-project.vercel.app/" target="_blank">
-            <div className="overlay">View Project</div>
-          </a>
-          <figure>
-            <img src="/imgs/projects/technoMatic.png" alt="" />
-          </figure>
-        </div>
-      </div>
-      <div className="row w-100 mx-auto">
         <div className="col-lg-4 card">
           <a href="https://e-book-store-green.vercel.app/" target="_blank">
             <div className="overlay">View Project</div>
@@ -51,14 +60,6 @@ export default function Portfolio() {
           </a>
           <figure>
             <img src="/imgs/projects/finsweet.png" alt="" />
-          </figure>
-        </div>
-        <div className="col-lg-4 card">
-          <a href="https://iti-css-3-look-scout.vercel.app/" target="_blank">
-            <div className="overlay">View Project</div>
-          </a>
-          <figure>
-            <img src="/imgs/projects/lookscout.png" alt="" />
           </figure>
         </div>
       </div>
