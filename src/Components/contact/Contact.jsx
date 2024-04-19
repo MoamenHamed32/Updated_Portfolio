@@ -49,7 +49,11 @@ export default function Contact() {
         )}
         <h2 className="section_title">CONTACT</h2>
         <img src="../../../assets/separatorBlack.svg" className="my-3" alt="" />
-        <form onSubmit={handleSubmit(onSubmit)} action="">
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          action="https://formspree.io/f/xpzvkpqr"
+          method="POST"
+        >
           <input
             type="text"
             {...register("userName", { required: true })}
