@@ -8,29 +8,6 @@ import "./Contact.css";
 function ContactForm() {
   const [state, handleSubmit] = formSpree("xpzvkpqr");
   const { register, reset } = useForm();
-  const [isOpen, setIsOpen] = useState(false);
-  const [styles, setStyles] = useState({
-    transform: `scale(0)`,
-  });
-  const onSubmit = (data) => {
-    console.log(data);
-    addDoc(contactsCol, data);
-    reset();
-    setIsOpen(true);
-    setTimeout(() => {
-      setStyles({
-        transform: `scale(1)`,
-      });
-    }, 300);
-  };
-  const closePopup = () => {
-    setTimeout(() => {
-      setIsOpen(false);
-    }, 300);
-    setStyles({
-      transform: `scale(0)`,
-    });
-  };
 
   return (
     <form onSubmit={handleSubmit}>
@@ -66,6 +43,30 @@ function ContactForm() {
 }
 
 export default function Contact() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [styles, setStyles] = useState({
+    transform: `scale(0)`,
+  });
+  const onSubmit = (data) => {
+    console.log(data);
+    addDoc(contactsCol, data);
+    reset();
+    setIsOpen(true);
+    setTimeout(() => {
+      setStyles({
+        transform: `scale(1)`,
+      });
+    }, 300);
+  };
+  const closePopup = () => {
+    setTimeout(() => {
+      setIsOpen(false);
+    }, 300);
+    setStyles({
+      transform: `scale(0)`,
+    });
+  };
+
   return (
     <section id="contact" className="contact">
       <div className="container d-flex flex-column align-items-center gap-5">
