@@ -6,7 +6,8 @@ import { addDoc } from "firebase/firestore";
 import "./Contact.css";
 
 function ContactForm() {
-  const [state, handleSubmit] = useForm("xpzvkpqr");
+  const [state, handleSubmit] = formSpree("xpzvkpqr");
+  const { register, reset } = useForm();
 
   return (
     <form onSubmit={handleSubmit}>
@@ -46,7 +47,6 @@ export default function Contact() {
   const [styles, setStyles] = useState({
     transform: `scale(0)`,
   });
-  const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
     console.log(data);
     addDoc(contactsCol, data);
