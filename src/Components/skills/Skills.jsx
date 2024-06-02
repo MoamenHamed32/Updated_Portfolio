@@ -37,9 +37,9 @@ export default function Skills() {
           <div className="row justify-content-center gap-4 mb-5">
             <div className="skill col-lg-2 col-md-4 d-flex flex-column align-items-center">
               <figure className="d-flex justify-content-center">
-                <img src="/imgs/skills/Angular.png" alt="" />
+                <img src="/imgs/skills/Next.png" alt="" />
               </figure>
-              <h3>Angular</h3>
+              <h3>Next.js</h3>
             </div>
             <div className="skill col-lg-2 col-md-4 d-flex flex-column align-items-center">
               <figure className="d-flex justify-content-center">
@@ -86,10 +86,7 @@ export default function Skills() {
               <h3>Redux</h3>
             </div>
           </div>
-        </div>
-        <div className="learning_skills w-100">
-          <h2 className="skills_state">LEARNING:</h2>
-          <div className="row justify-content-center gap-4 mb-5 ">
+          <div className="row justify-content-center gap-4 mb-5">
             <div className="skill col-lg-2 col-md-4 d-flex flex-column align-items-center">
               <figure className="d-flex justify-content-center">
                 <img src="/imgs/skills/node.png" alt="" />
@@ -107,6 +104,35 @@ export default function Skills() {
                 <img src="/imgs/skills/express.png" alt="" />
               </figure>
               <h3>Express JS</h3>
+            </div>
+            <div className="skill col-lg-2 col-md-4 d-flex flex-column align-items-center">
+              <figure className="d-flex justify-content-center">
+                <img src="/imgs/skills/supabase.png" alt="" />
+              </figure>
+              <h3>Supabase</h3>
+            </div>
+          </div>
+        </div>
+        <div className="learning_skills w-100">
+          <h2 className="skills_state">LEARNING:</h2>
+          <div className="row justify-content-center gap-4 mb-5 ">
+            <div className="skill col-lg-2 col-md-4 d-flex flex-column align-items-center">
+              <figure className="d-flex justify-content-center">
+                <img src="/imgs/skills/mysql.png" alt="" />
+              </figure>
+              <h3>MYSQL</h3>
+            </div>
+            <div className="skill col-lg-2 col-md-4 d-flex flex-column align-items-center">
+              <figure className="d-flex justify-content-center">
+                <img src="/imgs/skills/Angular.png" alt="" />
+              </figure>
+              <h3>Angular</h3>
+            </div>
+            <div className="skill col-lg-2 col-md-4 d-flex flex-column align-items-center">
+              <figure className="d-flex justify-content-center">
+                <img src="/imgs/skills/vue.png" alt="" />
+              </figure>
+              <h3>Vue.js</h3>
             </div>
           </div>
         </div>
